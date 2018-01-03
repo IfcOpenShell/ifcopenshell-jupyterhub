@@ -1,9 +1,11 @@
 # ifcopenshell-jupyterhub
 A jupyterhub setup script with IfcOpenShell and PythonOCC modules
 
+![jupyterhub IfcOpenShell pythonOCC screen-shot](https://raw.githubusercontent.com/IfcOpenShell/ifcopenshell-jupyterhub/master/static/screenshot.png)
+
 This is a reference implementation to setup a dockerized multi-user jupyter notebook environment ideal for classroom, company or individual usage. Additional details on the jupyterhub setup including necessary precautions can be found here https://github.com/jupyterhub/jupyterhub-deploy-docker
 
-The script builds a notebook image with recent versions of IfcOpenShell and pythonOCC to interactively visualize, analyse and manipulate IFC building models. The environment comes preloaded with examples scripts and models. Follow the steps below to setup the server.
+The script builds a notebook image with recent versions of IfcOpenShell and pythonOCC to interactively visualize, analyse and manipulate IFC building models. The environment comes preloaded with examples scripts and models. The steps below for Ubuntu are indicative to setup the server.
 
 ~~~bash
 # Prerequisites: make, docker, certbot
