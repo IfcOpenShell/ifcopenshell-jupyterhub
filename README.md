@@ -29,7 +29,7 @@ sudo apt-get update
 sudo apt-get install -y certbot
 
 # Clone this repository
-git clone --recursive git://131.155.133.214/ ifcopenshell-jupyterhub
+git clone --recursive https://github.com/IfcOpenShell/ifcopenshell-jupyterhub
 cd ifcopenshell-jupyterhub/jupyterhub
 
 # Create an empty userlist, every authenticated user can login
