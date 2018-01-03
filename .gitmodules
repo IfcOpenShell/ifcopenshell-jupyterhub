@@ -1,0 +1,3 @@
+[submodule "jupyterhub"]
+	path = jupyterhub
+	url = https://github.com/jupyterhub/jupyterhub-deploy-docker
