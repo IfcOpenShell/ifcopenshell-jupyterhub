@@ -101,5 +101,20 @@ COPY examples/01_visualize.py /opt/examples/01_visualize.py
 COPY examples/02_analyze.py /opt/examples/02_analyze.py
 COPY examples/ifc_viewer.py /opt/examples/ifc_viewer.py
 
+# viewer optimizations
+
+USER jovyan
+RUN /opt/conda/bin/pip install --user --upgrade --pre pyzmq
+USER root
+# COPY optimize_traitlets.py /home/jovyan/.local/lib/python3.6/site-packages/optimize_traitlets.py
+WORKDIR /opt/build
+RUN git clone https://github.com/vidartf/ipytunnel
+WORKDIR ipytunnel
+RUN chown -R jovyan .
+USER jovyan
+RUN /opt/conda/bin/pip install --user -e .
+USER root
+RUN jupyter nbextension enable --py --sys-prefix ipytunnel
+
 USER jovyan
 WORKDIR /home/jovyan/work
