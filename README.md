@@ -32,6 +32,9 @@ sudo apt-get install -y certbot
 git clone --recursive https://github.com/IfcOpenShell/ifcopenshell-jupyterhub
 cd ifcopenshell-jupyterhub/jupyterhub
 
+# volume_driver is no longer a keyword argument
+sed -i '/ volume_driver /s/^/#/' jupyterhub_config.py
+
 # Create an empty userlist, every authenticated user can login
 touch userlist
 
