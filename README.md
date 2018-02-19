@@ -45,7 +45,7 @@ sudo cp cert/live/jupyterhub/privkey.pem secrets/jupyterhub.key
 # GITHUB_CLIENT_ID=
 # GITHUB_CLIENT_SECRET=
 # OAUTH_CALLBACK_URL=
-vi settings/oauth.env
+vi secrets/oauth.env
 
 # Build docker images
 sudo make notebook_image
