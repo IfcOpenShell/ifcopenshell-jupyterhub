@@ -4,7 +4,7 @@ if [ ! -e models ]; then
 
 mkdir models
 cd models
-wget -O duplex.zip http://projects.buildingsmartalliance.org/files/?artifact_id=4278
+wget -O duplex.zip https://portal.nibs.org/files/wl/?id=4DsTgHFQAcOXzFetxbpRCECPbbfUqpgo
 unzip *.zip
 rm *.zip
 cd ..
