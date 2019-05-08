@@ -40,6 +40,7 @@ RUN git pull
 RUN cmake \
  -DCOLLADA_SUPPORT=Off \
  -DBUILD_EXAMPLES=Off \
+ -DIFCXML_SUPPORT=Off \
  -DOCC_INCLUDE_DIR=/opt/build/install/oce/include/oce \
  -DOCC_LIBRARY_DIR=/opt/build/install/oce/lib \
  -DPYTHON_LIBRARY=/opt/conda/lib/libpython3.6m.so \
